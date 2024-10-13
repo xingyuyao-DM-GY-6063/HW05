@@ -53,12 +53,22 @@ use pink color
 
 Rhythmic vibration with moderate speed
 
+
+![the young](image-1.png)
+
 ## Excitement
 
 
 feeling like a beating heart
 
+
+![excitement1](image-2.png)
+![excitement2](image-3.png)
+
 ## Doubt
 
 
 The color purple has a mysterious feel
+
+
+![doubt](image-4.png)
