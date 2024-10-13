@@ -2,9 +2,11 @@
 
 ## Clock Star Animation
 
+
 This project is a clock-inspired animation that visualizes time using geometric shapes. The clock is represented by rotating objects corresponding to seconds, minutes, and hours.
 
 ## How It Works
+
 
 - **Seconds**: A star shape rotates with the progression of seconds.
 - **Minutes**: A triangle rotates with the progression of minutes.
@@ -25,9 +27,10 @@ I chose one of my favorite pieces about listening from last week's READING:
 **Of the old, young, crying, longing,excited, calm, doubtful, etc.**
 **1964 spring**
 
-[Reference](https://idmp5.github.io/creative-coding/cycles/)
-[Reference](https://idmp5.github.io/creative-coding/sincos/)
-[Reference](https://p5js.org/zh-Hans/reference/p5/getTargetFrameRate/)
+[Reference:cycles](https://idmp5.github.io/creative-coding/cycles/)
+[Reference:sincos](https://idmp5.github.io/creative-coding/sincos/)
+[Reference:getTargetFrameRate](https://p5js.org/zh-Hans/reference/p5/getTargetFrameRate/)
+
 
 ## the old
 
@@ -43,11 +46,16 @@ use dark red color to express the feeling of old age
 ```
 
 ## the young
+
 use pink color
+
+
 Rhythmic vibration with moderate speed
 
 ## excitement
+
 feeling like a beating heart
 
 ## doubt
+
 The color purple has a mysterious feel
