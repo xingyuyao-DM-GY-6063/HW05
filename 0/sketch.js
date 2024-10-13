@@ -39,7 +39,7 @@ function draw() {
   let ha = hour * 15;
 
   background(133, 58, 27);
-  translate(windowWidth / 2, windowHeight / 2); // The center point is the center of the screen
+  translate(windowWidth / 2, windowHeight / 3); // The center point
   strokeWeight(5);
 
   // secend
@@ -47,30 +47,30 @@ function draw() {
   stroke(6, 170, 170);
   fill(6, 170, 170);
   rotate(sa);
-  star(0, 0, 80, 120); // Draw a star
+  star(0, 0, 80, 100); // Draw a star
   pop();
 
   // minute
   push();
   stroke(237, 217, 96);
-noFill();
+  noFill();
   rotate(ma);
-  triangle(-75, 50, 0, -100, 75, 50); // draw a triangle
+  triangle(-50, 50, 0, -50, 50, 50); // draw a triangle
   pop();
 
   // hour
   push();
   stroke(237, 217, 96);
   noFill();
-  strokeWeight(5); 
+  strokeWeight(5);
   rotate(ha);
-  rect(0, 0, 10, 400, 20); 
+  rect(0, 205, 10, 400, 20);
   pop();
 
   //central ellipse
   push();
   stroke(6, 170, 170);
   noFill();
-  ellipse(0, 0, 30, 30);
+  ellipse(0, 10, 30, 30);
   pop();
 }
