@@ -23,8 +23,14 @@ I was trying to fill the stars with color and found that I couldn't do it
 
 I chose one of my favorite pieces about listening from last week's READING:
 **BODY SOUND TAPE PIECE**
+
+
 **Make body sound tapes of differentpeople at different times.**
+
+
 **Of the old, young, crying, longing,excited, calm, doubtful, etc.**
+
+
 **1964 spring**
 
 [Reference:cycles](https://idmp5.github.io/creative-coding/cycles/)
