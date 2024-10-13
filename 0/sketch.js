@@ -1,7 +1,24 @@
 let second;
 let minute;
 let hour;
+function star(x, y, w, c) {
+  let r = w / 2;
+  push();
+  translate(x, y);
 
+  line(c, -c, r, 0);
+  line(c, c, r, 0);
+
+  line(-c, c, 0, r);
+  line(c, c, 0, r);
+
+  line(-c, -c, -r, 0);
+  line(-c, c, -r, 0);
+
+  line(-c, -c, 0, -r);
+  line(c, -c, 0, -r);
+  pop();
+}
 
 function setup() {
   let second = 0;
@@ -12,58 +29,48 @@ function setup() {
 }
 
 function draw() {
-  angleMode(DEGREES); 
-  let second = int(millis()/1000);
-  let minute = int(second/60);
-  let hour = int(minute/60);
+  angleMode(DEGREES);
+  let second = int(millis() / 1000);
+  let minute = int(second / 60);
+  let hour = int(minute / 60);
 
   let sa = second * 6;
   let ma = minute * 6;
   let ha = hour * 15;
 
-  background(180, 140, 140);
-  translate(windowWidth / 2, windowHeight / 2); // 中心点为屏幕中心
+  background(133, 58, 27);
+  translate(windowWidth / 2, windowHeight / 2); // The center point is the center of the screen
+  strokeWeight(5);
 
-  strokeWeight(3); // 设置描边粗细
-
-  // 秒
+  // secend
   push();
-  stroke(255, 204, 0); // 描边颜色
-  fill(255, 102, 102); // 填充颜色
+  stroke(6, 170, 170);
+  fill(6, 170, 170);
   rotate(sa);
-  ellipse(0, 0, 150, 150); // 绘制椭圆形
+  star(0, 0, 80, 120); // Draw a star
   pop();
-  
-  // 分
+
+  // minute
   push();
-  stroke(100, 255, 100);
-  fill(102, 153, 255);
+  stroke(237, 217, 96);
+noFill();
   rotate(ma);
-  triangle(-75, 50, 0, -100, 75, 50); // 绘制三角形
+  triangle(-75, 50, 0, -100, 75, 50); // draw a triangle
   pop();
 
-  // -秒
+  // hour
   push();
-  stroke(255, 50, 150);
-  fill(200, 100, 255);
-  rotate(-sa);
-  ellipse(0, 0, 80, 80); // 绘制较小的椭圆形
-  pop();
-
-  // 小时
-  push();
-  stroke(200, 200, 255);
-  fill(50, 255, 200);
-  strokeWeight(8); // 更粗的描边
+  stroke(237, 217, 96);
+  noFill();
+  strokeWeight(5); 
   rotate(ha);
-  rect(0, 0, 10, 400, 20); // 细长的矩形
+  rect(0, 0, 10, 400, 20); 
   pop();
-  
-  // 中心圆
+
+  //central ellipse
   push();
-  stroke(0);
-  fill(0, 150, 150);
-  ellipse(0, 0, 30, 30); // 中心的固定圆
+  stroke(6, 170, 170);
+  noFill();
+  ellipse(0, 0, 30, 30);
   pop();
 }
-
