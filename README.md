@@ -32,7 +32,7 @@ I chose one of my favorite pieces about listening from last week's READING:
 [Reference:getTargetFrameRate](https://p5js.org/zh-Hans/reference/p5/getTargetFrameRate/)
 
 
-## the old
+## The old
 
 
 ![the old](image.png)
@@ -45,17 +45,20 @@ use dark red color to express the feeling of old age
   ellipse(xposA % width, yA, 25);
 ```
 
-## the young
+## The young
+
 
 use pink color
 
 
 Rhythmic vibration with moderate speed
 
-## excitement
+## Excitement
+
 
 feeling like a beating heart
 
-## doubt
+## Doubt
+
 
 The color purple has a mysterious feel
