@@ -1,24 +1,25 @@
 let second;
 let minute;
-let h;
+let hour;
+
 
 function setup() {
-  let s = 0;
-  let m = 0;
-  let h = 0;
+  let second = 0;
+  let minute = 0;
+  let hour = 0;
   rectMode(CENTER);
   createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  angleMode(DEGREES); // 使用角度模式
-  let s = int(millis()/1000);
-  let m = int(s/60);
-  let h = int(m/60);
+  angleMode(DEGREES); 
+  let second = int(millis()/1000);
+  let minute = int(second/60);
+  let hour = int(minute/60);
 
-  let sa = s * 6;
-  let ma = m * 6;
-  let ha = h * 15;
+  let sa = second * 6;
+  let ma = minute * 6;
+  let ha = hour * 15;
 
   background(180, 140, 140);
   translate(windowWidth / 2, windowHeight / 2); // 中心点为屏幕中心
